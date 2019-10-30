@@ -1,9 +1,20 @@
 global_frame: odom
-rolling_window: false
+#global_frame: /stereo/stereo_odometry
+#rolling_window: false
 #static_map: true
 track_unknown_space: true
-#global_frame: /odom
 robot_base_frame: base_link
+
+#global_frame: "map"
+#robot_base_frame: "base_link"
+#transform_tolerance: 20.0
+#update_frequency: 2.0 
+#publish_frequency: 1.0
+rolling_window: true 
+#always_send_full_costmap: true
+#static_map: false
+#map_type: costmap
+
 
 plugins:
   - {name: obstacles_laser,           type: "costmap_2d::ObstacleLayer"}

@@ -1,4 +1,5 @@
 global_frame: map
+#global_frame: /rtabmap/grid_map
 rolling_window: false
 #static_map: true
 track_unknown_space: true
