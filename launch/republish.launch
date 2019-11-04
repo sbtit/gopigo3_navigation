@@ -4,11 +4,13 @@
   <group if="$(arg use_compressed)">
     <node name="right_compressed" pkg="image_transport" type="republish" args="compressed raw">
       <remap from="in" to="/stereo/right/image_raw" />
-      <remap from="out" to="/right_compressed" />
+      <remap from="out" to="/stereo/right/image_raw" />
+      <!-- <remap from="out" to="/right_compressed" /> -->
     </node>
     <node name="left_compressed" pkg="image_transport" type="republish" args="compressed raw">
       <remap from="in" to="/stereo/left/image_raw" />
-      <remap from="out" to="/left_compressed" />
+      <remap from="out" to="/stereo/left/image_raw" />
+      <!-- <remap from="out" to="/left_compressed" />-->
     </node>
   </group>
 </launch>
