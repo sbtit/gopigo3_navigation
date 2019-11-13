@@ -9,7 +9,6 @@ project(gopigo3_navigation)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   amcl
-  gmapping
   map_server
   move_base
   roscpp
